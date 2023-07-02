@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>White Hotel - шаблон сайта престижного отеля</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,500italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body class="internal-pages trans-header">
+	
+	<!-- Top Header -->
+	<div id="top-header">
+		<div class="inner-container container">
+			<!-- Contact Info -->
+			<ul class="contact-info list-inline">
+				<li><i class="fa fa-phone"></i>111-111-111</li>
+				<li><i class="fa fa-envelope-o"></i>mail@mail.com</li>
+			</ul>
+
+			<!-- Language Switcher -->
+            <select id="language-switcher">
+                <option value="1">English</option>
+                <option value="2">Русский</option>
+            </select>
+            <!-- End of Language Switcher -->
+		</div>
+	</div>
+	<!-- End of Top Header -->
+
+	<!-- Main Header -->
+	<header id="main-header">
+		<div class="inner-container container">
+			<div class="left-sec col-sm-4 col-md-2 clearfix">
+				<!-- Top Logo -->
+				<div id="top-logo">
+					<div class="title"><span>White</span> Hotel</div>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+			</div>
+			<div class="right-sec col-sm-8 col-md-10 clearfix">
+
+				<!-- Book Now -->
+				<a href="pages/booking.html" class="book-now-btn btn btn-default btn-sm">БРОНИРОВАТЬ</a>
+
+				<!-- Main Menu -->
+				<nav id="main-menu">
+					<ul class="list-inline">
+						<li class="active"><a href="index.html">Главная</a> 
+							<ul>
+								<li><a href="index2.html">Главная с один слайдером</a></li>
+							</ul>
+						</li>
+						<li><a href="pages/about.html">Об отеле</a></li>
+						<li><a href="#">Номера</a>
+							<ul>
+								<li><a href="pages/num-grid.html">В две колонки</a></li>
+								<li><a href="pages/num-list.html">В одну колонку</a></li>							
+								<li><a href="pages/rooms-details.html">Описание номеров</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Галерея</a>
+							<ul>
+								<li><a href="pages/gallery.html">Фотогалерея</a></li>
+							</ul>
+						</li>
+						<li><a href="pages/cafe.html">Кафе\бар</a></li>
+						<li><a href="pages/guest-book.html">Отзывы</a></li>
+						<li><a href="#">Страницы</a>
+							<ul>
+								<li><a href="pages/404.html">404</a></li>
+								<li><a href="pages/staff.html">Персонал</a></li>
+								<li><a href="pages/coming-soon.html">Акции</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Новости</a>
+							<ul>
+								<li><a href="pages/blog.html">Категории</a></li>
+								<li><a href="pages/blog-details.html">Описание новости</a></li>
+							</ul>
+						</li>
+						<li><a href="pages/contact.html">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Menu Handel -->
+				<div id="main-menu-handle" class="hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
+			</div>
+		</div>
+		<div id="mobile-menu-container" class="hidden-md hidden-lg"></div>
+	</header>
+	<!-- End of Main Header -->
+
+	
+	<!-- Gallery Container -->
+	<div class="gallery-container gallery-fullscreen">
+
+		<!-- Main Slider -->
+		<div id="fullscreen-slider">
+			<div class="items">
+	            <img src="assets/img/slider/1.jpg" alt="3"/><!-- Change the URL section based on your image\'s name -->
+	        </div>
+	        <div class="items">
+	            <img src="assets/img/slider/3.jpg" alt="3"/>
+	        </div>
+	        <div class="items">
+	            <img src="assets/img/slider/4.jpg" alt="4"/>
+	        </div>
+	        <div class="items">
+	            <img src="assets/img/slider/2.jpg" alt="2"/>
+	        </div>
+	    </div>
+
+		<!-- Full Screen Welcome -->
+		<div id="fullscreen-welcome">
+			<!-- Heading box -->
+			<div class="heading-box">
+				<h2>Приветствуем Вас в <span>отеле</span></h2><!-- Title -->
+			</div>
+			<div class="welcome-text">
+				Надо сказать, что медиапланирование конструктивно. Искусство медиапланирования методически уравновешивает креативный бизнес-план, отвоевывая свою долю рынка.
+			</div>
+			<!-- Booking Form -->
+			<div id="booking-form" class="horizontal">
+				<form class="booking-form" action="#"><!-- Do Not remove the classes -->
+
+						<!-- добавляемое поле -->
+						<div class="booking-fields col-xs-6 col-md-12">
+							<input type="text" name="name" placeholder="Ваше имя" value="" required="">
+						</div>
+						<!-- конец добавляемого поля -->
+
+						<!-- добавляемое поле -->
+						<div class="booking-fields col-xs-6 col-md-12">
+							<input type="text" name="phone" placeholder="Ваш телефон" value="" required="">
+						</div>
+						<!-- конец добавляемого поля -->
+
+					<div class="input-daterange clearfix">
+			            <div class="booking-fields col-xs-6 col-md-12">
+			                <input placeholder="Дата заезда" class="datepicker-fields check-in" type="text" name="start" /><!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->
+			                <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
+			            </div>
+			            <div class="booking-fields col-xs-6 col-md-12">
+			                <input placeholder="Дата выезда" class="datepicker-fields check-out" type="text" name="end" />
+			                <i class="fa fa-calendar"></i>
+			            </div>
+			        </div>
+		            <div class="booking-fields col-xs-6 col-md-12">
+		                <!-- Select boxes ( you can change the items and its value based on your project's needs ) -->
+		                <select name="room-type" id="booking-field2">
+		                    <option value="">Кол-во человек</option><!-- Select box items ( you can change the items and its value based on your project's needs ) -->
+		                    <option value="2">1</option>
+		                    <option value="3">2</option>
+		                    <option value="4">3</option>
+		                    <option value="5">4</option>
+		                    <option value="6">5</option>
+		                </select>
+		                <!-- End of Select boxes -->
+		            </div>
+		            <div class="booking-fields col-xs-6 col-md-12">
+		                <select name="guest" id="booking-field3">
+		                    <option value="1">Кол-во багажа</option>
+		                    <option value="2">1</option>
+		                    <option value="3">2</option>
+		                    <option value="4">3</option>
+		                    <option value="5">4</option>
+		                    <option value="6">5</option>
+		                </select>
+		            </div>
+		            <div class="booking-button-container col-xs-12">
+		                <input class="btn btn-default" value="Сделать заказ" type="submit"/><!-- Submit button -->
+		            </div>
+		        </form>
+			</div>
+
+		</div>
+	</div>
+	<!-- End of Gallery Container -->
+
+
+
+	<!-- Include the js files  -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="assets/js/inc.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<!-- End of js files and codes -->
+</body>
+
+</html>
